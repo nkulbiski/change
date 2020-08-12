@@ -1,4 +1,4 @@
-const DOMINATIONS = [
+const DENOMINATIONS = [
     {
         value: 1000,
         name: 'ten dollar bill'
@@ -36,9 +36,9 @@ export const makeChange = (amount) => {
 
     let change = []
 
-    for (const type in DOMINATIONS) {
-        let value = DOMINATIONS[type].value
-        let name = DOMINATIONS[type].name
+    for (const type in DENOMINATIONS) {
+        let value = DENOMINATIONS[type].value
+        let name = DENOMINATIONS[type].name
         let number = Math.floor(amountLeft / value)
 
         if (number > 1) {
